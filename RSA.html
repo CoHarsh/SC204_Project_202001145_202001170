@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA cryptosysytem</title>
+    <link rel="stylesheet" href="RSA.css">    
+</head>
+<body>  
+    <div class="head">
+        <h1>RSA cryptosysytem Calculator</h1>
+    </div>
+        <br>
+        <br>
+        <div class="inform1">
+           <h3>Introduction :</h3>
+            <p class="i1">
+                RSA full form as Rivest, Shamir, Adleman.This peoples are inventer of Public-Key Encryption Technology.Ron Rivest, Adi Shamir and Leonard Adleman, who developed the RSA encryption algorithm in 1977.this is the basic simulation of RSA cryptosysytem. this is not intended to work with large numbers as in real word does.
+            </p>
+            <br>
+            <div id="step1">
+               <h3 class="step_head"> Step : 1</h3>
+                <br>
+                
+                <p class="i1"> <strong> -> </strong> As RSA is a public-Private key cryptosysytem so we define some keys i.e. p and q as private key.</p>
+                <!-- <br> -->
+                <p class="sub_head"">Enter : P and Q respectivly:</p>
+                <br>
+                <div class="input1">
+                    p : <input type="number" name="" id="pasEnter" placeholder="enter p">
+                    q : <input type="number" name="" id="qasEnter" placeholder="enter q">
+                    <br>
+                </div>
+                
+                <br>
+                <p>You have Entered the p and q for Confirming this click here ! <button id="b1">Confirm</p></button>
+                <br><br>
+                 <h3 class="step_head">Step 2</h3>
+                <br>
+                <p class="i1"> <strong>-></strong> Now we are ready to compute the N as the product of P as  Q as N = p*q and also very usefull key as , </p>
+                <p class="i1">
+                 <span>&#632;</span>(p,q) = (p-1)*(q-1) and also to share we the public domail we will require two keys one as private and other as public: for instance let e be public and d as private key.
+                </p>
+                <br>
+                <br>
+                <p class="sub_head">some characteristics about this keys : </p>
+                <br>
+               <p class="i1"> <i>(1)</i> p and q are prime numbers and in real world use this are quite large numbers:</p>
+                Ex:
+                <br>
+                 p = 64135289477071580278790190170577389084825014742943447208116859632024532344630238623598752668347708737661925585694639798853367
+                <br><br>
+                q =  33372027594978156556226010605355114227940760344767554666784520987023841729210037080257448673296881877565718986258036932062711
+                <br>
+                <p class="i1">Now you can get an idea that there is next to imposible work for regular computers to break the product of this two prime numbers <br>(Exception : Quantam Computers)</p>
+                <br>
+                <p class="i1"> <i>(2)</i> e and <span>&#632;</span> are coprime(GCD(e,<span>&#632;</span>)) = 1)</p>
+                <br>
+               <p class="i1"> <i>(3)</i> we have to select d wisely such that e*d = 1mod(<span>&#632;</span>)</p>
+                <br><br>
+
+               <div class="input1">
+                N : <input type="number" name="" id="NasEnter" value="">
+                <span>&#632;</span>(p,q) : <input type="number" name="" id="phiasEnter" value="">
+               </div>
+                    <br>
+
+              <div class="head2">
+                <p class="ss">Possible Numbers for d and e product :</p> <textarea id="sugg1" cols="30" rows="5"></textarea>
+              </div>
+            
+
+            </div>
+            <br>
+            <br><br>
+            <h3 class="step_head">Step 3</h3>
+            <div id="step2">
+                <p class="i1"> -> Now You can see some suggestions are sowing on the box kindly peak one and enter in the Box :   </p>
+                <br>
+                <p class="sub_head">enter k:</p>
+                <div class="input1">
+                    <input type="number" name="" id="kenter" placeholder="enter k">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+                    
+                </div>
+                <div class="i1"><button id="getK">Click after Entering K</button></div>
+                <br>
+                <br>
+                <h3 class="step_head"> Step 4  </h3>
+                <br>
+                <p class="sub_head">The Factors are :</p>
+                <div class="input1">
+                     <textarea name="" id="Factors" cols="10" rows="1"></textarea>
+                </div>
+                <h3 class="step_head">Step 5</h3>
+                <br>
+               <p class="i1"> Now you can choose any one as e and rest as d in our case e as Public-Key.</p>
+                <br><br>
+               <div class="input1">
+                Your e : <input type="number" name="" id="eenter"><br><br>
+                Your d : <input type="number" name="" id="denter">
+               </div>
+                <br><br>
+                <button id="checked">Check the validity of e and d</button>
+                
+            </div>
+            <br><br>
+            <h3 class="step_head">Step 6</h3>
+            <div id="summary">
+                If all numbers are satisfied with conditions which are discuss in the step : 1 then here are selected numbers for processing :
+                <br>
+                <br>
+                <textarea name="" id="outputnumber" cols="50" rows="7"></textarea>
+            </div>  
+            <br><br>
+            <h3 class="step_head">
+                Step 7
+            </h3>
+            <div id="step3">
+               <p class="sub_head"> Now we will ready to encrypt and decrypt the data.</p>
+                <br>
+               <p style="color: red;"> Note: Your Message should not be greater than n else you will get wrong answer.</p>
+                <br>
+                <br>
+                <div class="co">
+                    Message : <input type="number" name="" id="message">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="started">Start the Process!</button>
+                </div>
+
+              
+
+                <br>
+                <div class="co">
+                    Encrpted Message : <input type="number" name="" id="encymessage" value="">&nbsp;&nbsp;&nbsp; Cipher = (message<sup>e</sup>)mod N
+                </div>
+
+
+                <br>
+               <div class="co">
+                Decrpted Message : <input type="number" name="" id="decrmessage">&nbsp;&nbsp;&nbsp; Message = (Cipher<sup>d</sup>)mod N
+               </div>
+
+              
+                <br>
+                
+            </div>      
+            <div id="last">
+                Here e and d are inverse to each other so we can get the message back.
+            </div>              
+        </div>
+<br><br>
+<hr>
+<br>
+        <footer id="foot">
+            <p>made by students
+                <ol class="foot1">
+                    <li>Kevin raval (202001170)</li>
+                    &nbsp; &nbsp; &nbsp;
+                    <li>Harsh prajapati(202001145)</li>
+                </ol>
+            </p>
+            <a href="https://codepen.io/kevinrawal/pen/ZEKboed">link of codepen</a>
+            <br><br><hr><br>
+        </footer>
+
+        <script src="RSA.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+*
+{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family:Courier New,' Courier', monospace;
+}
+
+.head{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+/* .marginf
+{
+    marginh-top: 5px;
+    margin-left: 15px;
+} */
+
+.i1{
+ /* border: 2px solid red; */
+ display: flex;
+ margin: 10px 10px;
+ padding: 2px 2px;
+}
+
+.step_head{
+    color: rgba(228, 144, 48, 0.938);
+    text-align: center;
+    font-size: 25px;
+}
+
+.sub_head{
+    color: rgb(50, 113, 230);
+    font-size: 25px;
+    margin-left: 25px;
+    
+}
+
+#pasEnter , #qasEnter , #NasEnter , #phiasEnter , #Factors , #eenter,#denter{
+    margin: 10px 10px;
+    padding: 10px 10px;
+   border-radius: 20px;
+   border-color: white;
+}
+
+
+.input1{
+    display: flex;
+    /* border: 2px solid red; */
+    margin: 10px 10px;
+    padding: 10px 10px;
+    display: flow-root;
+}
+#b1,#checked,#started{
+    color: rgba(228, 144, 48, 0.938);
+    background-color: black;
+    padding: 10px 12px;
+    margin: 1px 1px;
+}
+
+/* #b1,#checked,#started:hover{
+    color: black;
+    background-color: rgba(250, 135, 3, 0.938);
+} */
+#b1:hover{
+    color: black;
+     background-color: rgba(228, 144, 48, 0.938);
+}
+#checked:hover{
+    color: black;
+    background-color: rgba(228, 144, 48, 0.938);
+}
+#started:hover{
+    color: black;
+    background-color: rgba(228, 144, 48, 0.938);
+}
+
+#sugg1{
+    display: flex;
+    width: 50%;
+    border-style:dashed;
+    border-width: 2px;
+}
+
+.ss{
+    color: rgb(50, 113, 230);
+    font-size: 20px;
+}
+.head2{
+    display: flex;
+    height: 100px;
+    /* border: 2px solid red; */
+}
+#getK , #kenter{
+    color: rgba(228, 144, 48, 0.938);
+    /* background-color: cornflowerblue; */
+    padding: 10px 12px;
+    margin: 1px 1px;
+}
+
+#getK:hover{
+    color: black;
+    background-color: rgba(228, 144, 48, 0.938);
+}
+#kenter{
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: white;
+}
+#summary{
+    text-align: center;
+    color: cornflowerblue;
+}
+#outputnumber{
+    background-color: white;
+   text-align: center;
+   font-size: 25px;
+    color: black;
+    
+    width: 50%;
+    height: 250px;
+}
+
+#message,#encymessage,#decrmessage{
+ width: 300px;
+ height: 50px;
+}
+
+.co{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.foot1{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+#foot a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(250, 184, 43);
+    margin: 2px 2px;
+    margin-right: 20px;
+    padding: 2px 2px;
+    float: right;
+    border: 5px solid white;
+}
+#foot a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
